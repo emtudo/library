@@ -16,8 +16,8 @@ class CreateAuthorsTable extends Migration
         Schema::create('authors', function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->string('name', 45);
-            $table->date('birthdate');
-            $table->string('genre', 60);
+            $table->date('birthdate')->nullable();
+            $table->string('genre', 60)->nullable();
 
             $table->timestamps();
             $table->softDeletes();

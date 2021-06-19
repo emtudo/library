@@ -17,7 +17,7 @@ class CreateBooksTable extends Migration
             $table->uuid('id')->primary();
             $table->uuid('author_id')->index();
 
-            $table->string('name');
+            $table->string('name', 100);
             $table->integer('year');
 
             $table->timestamps();

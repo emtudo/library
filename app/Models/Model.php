@@ -10,7 +10,7 @@ abstract class Model extends EloquentModel
 {
     use HasFactory;
 
-    protected $increments = false;
+    public $incrementing = false;
     /**
      * The "type" of the primary key ID.
      *

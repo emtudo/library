@@ -7,4 +7,3 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('/authors', AuthorStoreController::class);
 Route::post('/books', BookStoreController::class);
-Route::post('/books_from_isbn/{isbn}', BookStoreFromISBNController::class);

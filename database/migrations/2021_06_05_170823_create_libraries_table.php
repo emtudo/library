@@ -15,7 +15,7 @@ class CreateLibrariesTable extends Migration
     {
         Schema::create('libraries', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->string('name');
+            $table->string('name', 60);
             $table->string('address');
 
             $table->timestamps();

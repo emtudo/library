@@ -30,6 +30,7 @@ services:
   api:
     build:
       context: .
+    command: "dev"
     ports:
       - "${DOCKER_API_HTTP_PORT:-9000}:80"
     environment:
